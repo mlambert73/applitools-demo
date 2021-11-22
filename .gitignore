@@ -1,0 +1,9 @@
+/target
+/.idea
+BrowserComparisonTester.iml
+pom.xml.versionsBackup
+maven-version-rules.xml
+chromedriver
+geckodriver
+.idea/compiler.xml
+.idea/misc.xml

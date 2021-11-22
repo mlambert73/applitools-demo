@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Browser Comparison Tester" parallel="tests">
+    <!-- GLOBAL -->
+    <parameter name="ClassicValidation" value="true"/>
+    <parameter name="ApplitoolsValidation" value="false"/>
+
+    <!-- DEMO CONFIG -->
+    <parameter name="AppVersion" value="1" />
+    <parameter name="UseOften" value="false" />
+    <parameter name="SessionID" value="false" />
+    <parameter name="ModifyFont" value="false" />
+    <parameter name="ChangeLogo" value="false" />
+    <parameter name="ResolveContrastIssue" value="false"/>
+    <parameter name="ReferAFriend" value="false"/>
+    <parameter name="URL" value="http://applitoolsjenkins.eastus.cloudapp.azure.com:5000/demo.html"/>
+
+    <!-- GLOBAL APPLITOOLS CONFIG -->
+    <parameter name="APIKey" value=""/>
+    <parameter name="UseVisualGrid" value="false"/>
+    <parameter name="WaitBeforeScreenshots" value="0" />
+    <parameter name="LocalBrowserViewport" value="1440x820"/> <!-- width x height -->
+    <parameter name="RunHeadless" value="false" />
+
+    <!-- LOGGING -->
+    <parameter name="EnableEyesLogger" value="false"/>
+    <parameter name="EnableVGResourceWriter" value="false"/>
+
+    <!-- SUITE/TEST CONFIG -->
+    <parameter name="BatchName" value="Applitools Demo"/>
+    <parameter name="TestName" value="Applitools Demo"/>
+    <parameter name="AppName" value="Applitools Demo App"/>
+    <parameter name="Branch" value="Child Branch 2" />
+    <parameter name="ParentBranch" value="Parent Branch 1" />
+
+    <!-- VISUAL GRID CONFIG -->
+    <parameter name="VisualGridConcurrentTests" value="100" />
+    <parameter name="RunOnDesktop" value="true"/>
+    <parameter name="RunOnMobile" value="true"/>
+
+    <!-- VISUAL GRID MOBILE CONFIG -->
+    <parameter name="MobilePortrait" value="true"/>
+    <parameter name="MobileLandscape" value="false"/>
+
+    <parameter name="ChromeDriver" value="c:/selenium/chromedriver.exe"/>
+    <parameter name="GeckoDriver" value="c:/selenium/geckodriver.exe"/>
+    <parameter name="ExecutionBrowser" value="chrome"/>
+
+    <test name="Applitools Demo">
+        <classes>
+            <class name="ApplitoolsExample" />
+        </classes>
+    </test>
+</suite>
